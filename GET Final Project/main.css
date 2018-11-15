@@ -1,0 +1,190 @@
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align:baseline;
+}
+html {
+    font-family: Heiti SC;
+    font-weight: 20
+}
+
+body {
+    width: 100%;
+    background-image: url(images/BG_05.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    width:90%;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+h1 {
+    color: #2B4B1C;
+    font-size: 48px;
+}
+p {
+    color: #404843;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+    margin-top:30px;
+}
+li {
+    color: #404843;
+    font-size:16px;
+    margin-bottom: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*-----nav-----*/
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+nav a {
+    color: #404843;
+    text-decoration: none;
+}
+nav a img {
+    vertical-align: middle;
+}
+nav a:nth-child(2) {
+    float: right;
+}
+
+/*-----header-----*/
+header {
+    margin: 100px 0 200px 0;
+    text-align: center;
+}
+header p{
+    width: 45%;
+    margin: 30px auto 0 auto;
+}
+header a{
+    color:#689629;
+    text-decoration: none; 
+}
+
+/*-----work-----*/
+.work{
+    text-align: center;
+    width: 100%;
+}
+.work a img {
+    margin: 1%;
+    width: 45%;
+    opacity: 0.65;
+    transition: 0.3s;
+}
+.work a img:hover {opacity: 1}
+
+/*-----aboutMe-----*/
+.aboutMe {
+    text-align: center;
+    margin: 100px 0 200px 0;
+    position: relative;
+}
+.aboutMe h1 {
+    color: #56674D;
+}
+.Know {
+    color: #DEE6D3;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top:-20px;
+    z-index: -1;
+}
+
+/*-----work2-----*/
+.work2 {
+    width:100%;
+    text-align: center;
+}
+.work2 a img {
+    margin: 1%;
+    width: 92%;
+    opacity: 0.65;
+    transition: 0.3s;
+}
+.work2 a img:hover {opacity: 1}
+
+/*-----footer-----*/
+footer {
+    text-align: center;
+    margin: 60px 0;
+}
+footer p {
+    color:#C8CBD1;
+}
+
+/*-----Responsive-----*/
+
+@media only screen and (max-width:991px) {
+    header p {
+        width: 100%;
+    }
+    .work a img {
+        margin: 2%;
+        width: 96%;
+        opacity: 1
+    }
+    .work2 a img {
+        margin: 2%;
+        width: 96%;
+        opacity: 1
+    }
+}
+@media only screen and (max-width: 760px) {
+    header {
+        width: 96%;
+        margin: 30px auto 100px auto;
+        text-align: left;
+    }
+    .aboutMe {
+        text-align: left;
+        width: 96%
+            margin: 70px auto 100px auto;
+    }
+    .Know {
+        visibility: hidden;
+    }
+    footer {
+        text-align: left; 
+        width: 90%;
+        margin: 60px auto;
+    }
+    ::-webkit-scrollbar {
+    width: 5px;
+}
